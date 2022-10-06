@@ -34,4 +34,4 @@ jobs:
           external_repository: numaproj/numaproj.github.io
           publish_branch: main
           publish_dir: ./public
-          cname: numaproj.io
+          cname: www.numaproj.io
