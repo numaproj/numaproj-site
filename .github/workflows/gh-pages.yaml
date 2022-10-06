@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Use Node.js 12.x
+      - name: Use Node.js 18.x
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x
+          node-version: 18.x
       - uses: actions/cache@v1
         with:
           path: node_modules
@@ -32,7 +32,7 @@ jobs:
           cp CNAME ./public/
       - name: deploy
         if: ${{ github.event_name == 'push' }}
-        uses: peaceiris/actions-gh-pages@v2.5.0
+        uses: peaceiris/actions-gh-pages@v3.8.0
         env:
           PERSONAL_TOKEN: ${{ secrets.TOKEN }}
           EXTERNAL_REPOSITORY: numaproj/numaproj.github.io
