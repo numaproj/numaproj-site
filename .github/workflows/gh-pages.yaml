@@ -26,15 +26,12 @@ jobs:
       - name: build
         run: |
           yarn build
-      - name: cname
-        if: ${{ github.event_name == 'push' }}
-        run: |
-          cp CNAME ./public/
       - name: deploy
         if: ${{ github.event_name == 'push' }}
-        uses: peaceiris/actions-gh-pages@v3.8.0
+        uses: peaceiris/actions-gh-pages@v3
         env:
-          PERSONAL_TOKEN: ${{ secrets.TOKEN }}
-          EXTERNAL_REPOSITORY: numaproj/numaproj.github.io
-          PUBLISH_BRANCH: main
-          PUBLISH_DIR: ./public
+          personal_token: ${{ secrets.TOKEN }}
+          external_repository: numaproj/numaproj.github.io
+          publish_branch: main
+          publish_dir: ./public
+          cname: numaproj.io
