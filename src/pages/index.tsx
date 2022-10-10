@@ -536,7 +536,7 @@ const IndexPage = () => {
           offset={3}
           speed={1}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'end' }}>
-          <img src={Mountains} />
+          <img src={Mountains} className={" min-w-[960px]"}/>
         </ParallaxLayer>
       </Parallax>
     </Layout>
