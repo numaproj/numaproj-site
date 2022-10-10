@@ -42,7 +42,9 @@ const IndexPage = () => {
           speed={0.3}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'start', opacity: '1', marginTop: "0em" }}>
           <div className="mx-auto text-center " style={{ width: '100%', top: '0', left: '0' }}>
-            <img src={IceB} className="mx-auto mt-[-20em]" style={{ minWidth: '1440px', maxWidth: '1440px', transform: 'translate(-50%, 0)', marginLeft: '49.7%' }} />
+            <Fade>
+              <img src={IceB} className="mx-auto mt-[-20em]" style={{ minWidth: '1440px', maxWidth: '1440px', transform: 'translate(-50%, 0)', marginLeft: '49.7%' }} />
+            </Fade>
           </div>
         </ParallaxLayer>
 
@@ -51,7 +53,9 @@ const IndexPage = () => {
           speed={0.34}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'top', opacity: '1', marginTop: "0em" }}>
           <div style={{ maxWidth: '100%', width: '100%', textAlign: 'center' }}>
-            <Panda1 className="mx-auto mt-[12.5em]" />
+            <Fade>
+              <Panda1 className="mx-auto mt-[12.5em]" />
+            </Fade>
           </div>
         </ParallaxLayer>
 
@@ -203,9 +207,9 @@ const IndexPage = () => {
           offset={1}
           speed={0.2}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <div>
+          <Fade delay={300}>
             <img src={Glow} className=" min-w-[1260px] opacity-90" />
-          </div>
+          </Fade>
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -224,11 +228,11 @@ const IndexPage = () => {
           offset={1}
           speed={0.2}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <Fade>
-              <div className="text-center">
-                <img src={Numaflow} className="md:w-[691px] w-[441px] max-w-[85%] md:max-w-[100%] md:mb-[20%] mb-[80%] mx-auto relative md:left-[-2em]" />
-              </div>
-            </Fade>
+          <Fade>
+            <div className="text-center">
+              <img src={Numaflow} className="md:w-[691px] w-[441px] max-w-[85%] md:max-w-[100%] md:mb-[20%] mb-[80%] mx-auto relative md:left-[-2em]" />
+            </div>
+          </Fade>
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -403,7 +407,7 @@ const IndexPage = () => {
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <div className="relative top-[0%]">
             <Fade delay={300}>
-            <img src={Glow} className=" min-w-[1260px] opacity-90" />
+              <img src={Glow} className=" min-w-[1260px] opacity-90" />
             </Fade>
           </div>
         </ParallaxLayer>
@@ -415,7 +419,7 @@ const IndexPage = () => {
           <div className="relative md:top-[-24%] top-[-27%]">
             <Fade delay={800}>
               <AttentionSeeker delay={700} effect="headShake">
-                <img src={Code} className="ml-[0em]"  />
+                <img src={Code} className="ml-[0em]" />
               </AttentionSeeker>
             </Fade>
           </div>
@@ -536,7 +540,10 @@ const IndexPage = () => {
           offset={3}
           speed={1}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'end' }}>
-          <img src={Mountains} className={" min-w-[960px]"}/>
+          <Fade>
+            <img src={Mountains} className={" min-w-[960px]"} />
+          </Fade>
+
         </ParallaxLayer>
       </Parallax>
     </Layout>
