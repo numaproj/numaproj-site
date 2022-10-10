@@ -5,22 +5,21 @@ import { Fade, AttentionSeeker } from "react-awesome-reveal";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { Header } from "../components/header";
 import { IntuitLogo } from "../components/intuitlogo";
-import { FooterImage } from "../components/footerimage";
-import Numaflow from "../assets/numaflow.svg"
-import Numalogic from "../assets/numalogic.svg"
+import Numaflow from "../images/numaflow.png"
+import Numalogic from "../images/numalogic.png"
 import Panda1 from "../assets/panda1.svg"
 import Panda2 from "../assets/panda2.svg"
-import Ellipse1 from "../assets/ellipse1.svg"
-import Glow from "../assets/glow.svg"
-import Spark from "../assets/spark.svg"
-import Code from "../assets/code.svg"
-import Wavyline from "../assets/wavyline.svg"
-import Straightline from "../assets/straightline.svg"
+import Ellipse1 from "../images/ellipse1.png"
+import Glow from "../images/glow.png"
+import Spark from "../images/spark.png"
+import Code from "../images/code.png"
+import Wavyline from "../images/wavyline.png"
+import Straightline from "../images/straightline.png"
 import IceB from "../images/iceberg.png"
 import Wave from "../images/wave.png"
+import Mountains from "../images/mountains.png"
 
 const IndexPage = () => {
-  const parallax = React.useRef();
 
   return (
     <Layout>
@@ -62,7 +61,7 @@ const IndexPage = () => {
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'start' }}>
           <div className="mt-[29em]">
             <Fade>
-              <h1 style={{ lineHeight: "1.2em" }} className="lg:text-[40px] max-w-[800px] md:text-[32px] text-[26px] font-bold text-white text-center mt-[-10px]">Real-time data processing and AI analytics&nbsp;on&nbsp;Kubernetes</h1>
+              <h1 style={{ lineHeight: "1.2em" }} className="lg:text-[40px] max-w-[800px] md:text-[32px] text-[26px] font-bold text-white text-center mt-[-10px]">Real-time data processing&nbsp;and&nbsp;AI analytics&nbsp;on&nbsp;Kubernetes</h1>
             </Fade>
           </div>
         </ParallaxLayer>
@@ -72,7 +71,7 @@ const IndexPage = () => {
           speed={0.23}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'start', zIndex: 900 }}>
           <div>
-            <div className="lg:mt-[36.5em] mt-[34.5em] space-x-2 justify-center">
+            <div className="lg:mt-[36.5em] mt-[36.5em] md:[mt-[34.5em]] space-x-2 justify-center">
               <Fade delay={300}>
                 <a href="https://github.com/numaproj" target={"_blank"} rel="noopener noreferrer" className="inline-block text-white px-9 py-4 bg-blue hover:bg-blue/50 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
                   View on Github
@@ -103,7 +102,7 @@ const IndexPage = () => {
           <div className="pt-[6em] mr-[58em] pt-[10em]">
             <Fade fraction={1}>
               <AttentionSeeker delay={300} effect="flash">
-                <Spark className="opacity-100" />
+                <img src={Spark} className="opacity-100" />
               </AttentionSeeker>
             </Fade>
           </div>
@@ -116,7 +115,7 @@ const IndexPage = () => {
           <div className="mr-[35em] mb-[5em]">
             <Fade fraction={1}>
               <AttentionSeeker delay={300} effect="flash">
-                <Spark className="opacity-100" />
+                <img src={Spark} className="opacity-100" />
               </AttentionSeeker>
             </Fade>
           </div>
@@ -129,7 +128,7 @@ const IndexPage = () => {
           <div className="mt-[-6em] pr-[17em]">
             <Fade fraction={1} delay={500}>
               <AttentionSeeker delay={1500} effect="flash">
-                <Spark className="opacity-100" />
+                <img src={Spark} className="opacity-100" />
               </AttentionSeeker>
             </Fade>
           </div>
@@ -142,7 +141,7 @@ const IndexPage = () => {
           <div className="mt-[-20em] pl-[1em]">
             <Fade fraction={1} delay={1500}>
               <AttentionSeeker delay={1800} effect="flash">
-                <Spark className="opacity-100" />
+                <img src={Spark} className="opacity-100" />
               </AttentionSeeker>
             </Fade>
           </div>
@@ -155,7 +154,7 @@ const IndexPage = () => {
           <div className="pt-[6em] pl-[13em]">
             <Fade fraction={1} delay={300}>
               <AttentionSeeker delay={400} effect="flash">
-                <Spark className="opacity-100" />
+                <img src={Spark} className="opacity-100" />
               </AttentionSeeker>
             </Fade>
           </div>
@@ -168,7 +167,7 @@ const IndexPage = () => {
           <div className="pt-[0em] pl-[29em]">
             <Fade fraction={1} delay={2000}>
               <AttentionSeeker delay={2100} effect="flash">
-                <Spark className="opacity-100" />
+                <img src={Spark} className="opacity-100" />
               </AttentionSeeker>
             </Fade>
           </div>
@@ -181,7 +180,7 @@ const IndexPage = () => {
           <div className="pt-[6em] ml-[59em]">
             <Fade fraction={1} delay={700}>
               <AttentionSeeker delay={900} effect="flash">
-                <Spark className="opacity-100" />
+                <img src={Spark} className="opacity-100" />
               </AttentionSeeker>
             </Fade>
           </div>
@@ -194,7 +193,7 @@ const IndexPage = () => {
           <div className="pt-[6em] pl-[38em]">
             <Fade fraction={1} delay={1300}>
               <AttentionSeeker delay={1500} effect="flash">
-                <Spark className="opacity-100" />
+                <img src={Spark} className="opacity-100" />
               </AttentionSeeker>
             </Fade>
           </div>
@@ -205,7 +204,7 @@ const IndexPage = () => {
           speed={0.2}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <div>
-            <Glow className="opacity-90" />
+            <img src={Glow} className=" min-w-[1260px] opacity-90" />
           </div>
         </ParallaxLayer>
 
@@ -225,9 +224,11 @@ const IndexPage = () => {
           offset={1}
           speed={0.2}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <Fade delay={300}>
-            <Numaflow className="md:w-[691px] sm:w-[441px] md:mb-[20%] sm:mb-[65%] sm:ml-[1em] md:ml-[-3.55em]" />
-          </Fade>
+            <Fade>
+              <div className="text-center">
+                <img src={Numaflow} className="md:w-[691px] w-[441px] max-w-[85%] md:mb-[20%] mb-[80%] mx-auto relative md:left-[-2em]" />
+              </div>
+            </Fade>
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -236,7 +237,7 @@ const IndexPage = () => {
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <div className="relative top-[0%]">
             <Fade delay={500}>
-              <Ellipse1 className="sm:scale-90 md:scale-100" />
+              <img src={Ellipse1} className="scale-90 md:scale-100" />
             </Fade>
           </div>
         </ParallaxLayer>
@@ -247,7 +248,7 @@ const IndexPage = () => {
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <div className="relative top-[7%]">
             <Fade>
-              <Panda2 className="sm:scale-90 md:scale-100" />
+              <Panda2 className="scale-90 md:scale-100" />
             </Fade>
           </div>
         </ParallaxLayer>
@@ -257,7 +258,7 @@ const IndexPage = () => {
           speed={0.27}
 
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 100 }}>
-          <h1 className="relative md:top-[12%] sm:top-[16%] text-[20px] max-w-30 whitespace-pre-wrap font-normal text-center">
+          <h1 className="relative md:top-[12%] top-[16%] text-[20px] max-w-30 whitespace-pre-wrap font-normal text-center">
             <Fade>
               A massively parallel, real-time data&nbsp;processing&nbsp;engine
             </Fade>
@@ -269,7 +270,7 @@ const IndexPage = () => {
           speed={0.3}
           // sticky={{start: 1, end: 1.3}}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 110 }}>
-          <div className="relative md:top-[9%] sm:top-[16%]">
+          <div className="relative md:top-[9%] top-[16%]">
             <Fade delay={500}>
               <a href="https://numaflow.numaproj.io/" target={"_blank"} rel="noopener noreferrer" className="mt-[3em] inline-block px-9 py-4 bg-blue hover:bg-blue/50 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
                 Learn More
@@ -283,9 +284,9 @@ const IndexPage = () => {
           speed={0.35}
           // sticky={{start: 1, end: 1.3}}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <div className="relative md:top-[20%] sm:top-[26%]">
+          <div className="relative md:top-[20%] top-[26%]">
             <Fade delay={800}>
-              <Straightline />
+              <img src={Straightline} />
             </Fade>
           </div>
         </ParallaxLayer>
@@ -300,7 +301,7 @@ const IndexPage = () => {
           <div className="pt-[6em] mr-[58em] pt-[10em]">
             <Fade fraction={1}>
               <AttentionSeeker delay={300} effect="flash">
-                <Spark className="opacity-100" />
+                <img src={Spark} className="opacity-100" />
               </AttentionSeeker>
             </Fade>
           </div>
@@ -312,7 +313,7 @@ const IndexPage = () => {
           <div className="mr-[35em] mb-[5em]">
             <Fade fraction={1}>
               <AttentionSeeker delay={300} effect="flash">
-                <Spark className="opacity-100" />
+                <img src={Spark} className="opacity-100" />
               </AttentionSeeker>
             </Fade>
           </div>
@@ -325,7 +326,7 @@ const IndexPage = () => {
           <div className="mt-[-6em] pr-[17em]">
             <Fade fraction={1} delay={500}>
               <AttentionSeeker delay={1500} effect="flash">
-                <Spark className="opacity-100" />
+                <img src={Spark} className="opacity-100" />
               </AttentionSeeker>
             </Fade>
           </div>
@@ -338,7 +339,7 @@ const IndexPage = () => {
           <div className="mt-[-20em] pl-[1em]">
             <Fade fraction={1} delay={1500}>
               <AttentionSeeker delay={1800} effect="flash">
-                <Spark className="opacity-100" />
+                <img src={Spark} className="opacity-100" />
               </AttentionSeeker>
             </Fade>
           </div>
@@ -351,7 +352,7 @@ const IndexPage = () => {
           <div className="pt-[6em] pl-[13em]">
             <Fade fraction={1} delay={300}>
               <AttentionSeeker delay={400} effect="flash">
-                <Spark className="opacity-100" />
+                <img src={Spark} className="opacity-100" />
               </AttentionSeeker>
             </Fade>
           </div>
@@ -364,7 +365,7 @@ const IndexPage = () => {
           <div className="pt-[0em] pl-[29em]">
             <Fade fraction={1} delay={2000}>
               <AttentionSeeker delay={2100} effect="flash">
-                <Spark className="opacity-100" />
+                <img src={Spark} className="opacity-100" />
               </AttentionSeeker>
             </Fade>
           </div>
@@ -377,7 +378,7 @@ const IndexPage = () => {
           <div className="pt-[6em] ml-[59em]">
             <Fade fraction={1} delay={700}>
               <AttentionSeeker delay={900} effect="flash">
-                <Spark className="opacity-100" />
+                <img src={Spark} className="opacity-100" />
               </AttentionSeeker>
             </Fade>
           </div>
@@ -390,7 +391,7 @@ const IndexPage = () => {
           <div className="pt-[6em] pl-[38em]">
             <Fade fraction={1} delay={1300}>
               <AttentionSeeker delay={1500} effect="flash">
-                <Spark className="opacity-100" />
+                <img src={Spark} className="opacity-100" />
               </AttentionSeeker>
             </Fade>
           </div>
@@ -402,7 +403,7 @@ const IndexPage = () => {
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <div className="relative top-[0%]">
             <Fade delay={300}>
-              <Glow className="opacity-100" />
+            <img src={Glow} className=" min-w-[1260px] opacity-90" />
             </Fade>
           </div>
         </ParallaxLayer>
@@ -411,10 +412,10 @@ const IndexPage = () => {
           offset={2}
           speed={0.4}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <div className="relative md:top-[-24%] sm:top-[-27%]">
+          <div className="relative md:top-[-24%] top-[-27%]">
             <Fade delay={800}>
               <AttentionSeeker delay={700} effect="headShake">
-                <Code className="ml-[0em]" />
+                <img src={Code} className="ml-[0em]"  />
               </AttentionSeeker>
             </Fade>
           </div>
@@ -426,7 +427,7 @@ const IndexPage = () => {
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <div className="relative top-[-30%]">
             <Fade delay={1300}>
-              <Wavyline className="md:scale-100 sm:scale-75" />
+              <img src={Wavyline} className=" min-w-[960px] md:scale-100 scale-75" />
             </Fade>
           </div>
         </ParallaxLayer>
@@ -435,9 +436,10 @@ const IndexPage = () => {
           offset={2}
           speed={0.2}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <div className="relative sm:top-[-50%] md:top-[0%] md:mb-[30em] ">
+          <div className="relative top-[-50%] md:top-[0%] md:mb-[30em] ">
             <Fade delay={300}>
-              <Numalogic className="sm:ml-[.5em] md:ml-[-2em] sm:scale-[63%] md:scale-[100%]" />
+              <img src={Numalogic} className="md:w-[691px] w-[441px] max-w-[85%] mx-auto left-[0em] md:left-[-1.95em] relative" />
+
             </Fade>
           </div>
         </ParallaxLayer>
@@ -447,7 +449,7 @@ const IndexPage = () => {
           speed={0.27}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <Fade delay={300}>
-            <Ellipse1 className="sm:scale-90 md:scale-100 mb-[26em]" />
+            <img src={Ellipse1} className="scale-90 md:scale-100 mb-[26em]" />
           </Fade>
         </ParallaxLayer>
 
@@ -456,7 +458,7 @@ const IndexPage = () => {
           speed={0.3}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <Fade>
-            <Panda2 className="sm:scale-90 md:scale-100 mb-[20em]" />
+            <Panda2 className="scale-90 md:scale-100 mb-[20em]" />
           </Fade>
         </ParallaxLayer>
 
@@ -482,7 +484,7 @@ const IndexPage = () => {
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <div className="flex mt-[19em] space-x-2 justify-center">
             <Fade delay={800}>
-              <Straightline />
+              <img src={Straightline} />
             </Fade>
           </div>
         </ParallaxLayer>
@@ -492,7 +494,7 @@ const IndexPage = () => {
           speed={0.3}
           // sticky={{start: 1, end: 1.3}}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 9999 }}>
-          <div className="flex space-x-2 mt-[1em] justify-center">
+          <div className="flex space-x-2 md:mt-[1em] mt-[4em] justify-center">
             <Fade delay={500}>
               <a href="https://numalogic.numaproj.io/" target={"_blank"} rel="noopener noreferrer" className="inline-block px-9 py-4 bg-blue hover:bg-blue/50 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
                 Learn More
@@ -531,10 +533,10 @@ const IndexPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={3.4}
+          offset={3}
           speed={1}
-          style={{ display: 'flex', justifyContent: 'center', alignItems: 'bottom' }}>
-          <FooterImage />
+          style={{ display: 'flex', justifyContent: 'center', alignItems: 'end' }}>
+          <img src={Mountains} />
         </ParallaxLayer>
       </Parallax>
     </Layout>
