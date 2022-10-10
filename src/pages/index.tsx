@@ -226,7 +226,7 @@ const IndexPage = () => {
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <Fade>
               <div className="text-center">
-                <img src={Numaflow} className="md:w-[691px] w-[441px] max-w-[85%] md:mb-[20%] mb-[80%] mx-auto relative md:left-[-2em]" />
+                <img src={Numaflow} className="md:w-[691px] w-[441px] max-w-[85%] md:max-w-[100%] md:mb-[20%] mb-[80%] mx-auto relative md:left-[-2em]" />
               </div>
             </Fade>
         </ParallaxLayer>
@@ -438,7 +438,7 @@ const IndexPage = () => {
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <div className="relative top-[-50%] md:top-[0%] md:mb-[30em] ">
             <Fade delay={300}>
-              <img src={Numalogic} className="md:w-[691px] w-[441px] max-w-[85%] mx-auto left-[0em] md:left-[-1.95em] relative" />
+              <img src={Numalogic} className="md:w-[707px] w-[441px] max-w-[85%] md:max-w-[100%] mx-auto left-[0em] md:left-[-1.5em] relative" />
 
             </Fade>
           </div>
