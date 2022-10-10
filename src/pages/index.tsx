@@ -93,7 +93,7 @@ const IndexPage = () => {
           <div>
             {/* <Wave className="opacity-60 mb-[10em]"/> */}
             <Fade delay={500}>
-              <img src={Wave} className="mx-auto mb-[10em]" style={{ width: '975px', maxWidth: '120%', transform: 'translate(-50%, 0)', marginLeft: '49.7%' }} />
+              <img src={Wave} className="mx-auto mb-[10em]" style={{ width: '975px', maxWidth: '140%', transform: 'translate(-50%, 0)', marginLeft: '49.7%' }} />
             </Fade>
           </div>
         </ParallaxLayer>
