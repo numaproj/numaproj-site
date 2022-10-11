@@ -1,10 +1,10 @@
-import * as React from "react";
-import type { HeadFC } from "gatsby";
-import Layout from "../components/layout";
-import { Fade, AttentionSeeker } from "react-awesome-reveal";
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import { Header } from "../components/header";
-import { IntuitLogo } from "../components/intuitlogo";
+import * as React from "react"
+import type { HeadFC } from "gatsby"
+import Layout from "../components/layout"
+import { Fade, AttentionSeeker } from "react-awesome-reveal"
+import { Parallax, ParallaxLayer } from "@react-spring/parallax"
+import { Header } from "../components/header"
+import { IntuitLogo } from "../components/intuitlogo"
 import Numaflow from "../images/numaflow.png"
 import Numalogic from "../images/numalogic.png"
 import Panda1 from "../assets/panda1.svg"
@@ -18,7 +18,7 @@ import Straightline from "../images/straightline.png"
 import IceB from "../images/iceberg.png"
 import Wave from "../images/wave.png"
 import Mountains from "../images/mountains.png"
-import Button from "../components/button";
+import Button from "../components/button"
 
 const IndexPage = () => {
 
