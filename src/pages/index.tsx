@@ -18,6 +18,7 @@ import Straightline from "../images/straightline.png"
 import IceB from "../images/iceberg.png"
 import Wave from "../images/wave.png"
 import Mountains from "../images/mountains.png"
+import Button from "../components/button";
 
 const IndexPage = () => {
 
@@ -77,9 +78,7 @@ const IndexPage = () => {
           <div>
             <div className="lg:mt-[36.5em] mt-[36.5em] md:[mt-[34.5em]] space-x-2 justify-center">
               <Fade delay={300}>
-                <a href="https://github.com/numaproj" target={"_blank"} rel="noopener noreferrer" className="inline-block text-white px-9 py-4 bg-blue hover:bg-blue/50 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
-                  View on Github
-                </a>
+                <Button href="https://github.com/numaproj" text={"View on Github"} target={"_blank"}/>
               </Fade>
             </div>
           </div>
@@ -274,11 +273,9 @@ const IndexPage = () => {
           speed={0.3}
           // sticky={{start: 1, end: 1.3}}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 110 }}>
-          <div className="relative md:top-[9%] top-[16%]">
+          <div className="relative md:top-[12%] top-[16%]">
             <Fade delay={500}>
-              <a href="https://numaflow.numaproj.io/" target={"_blank"} rel="noopener noreferrer" className="mt-[3em] inline-block px-9 py-4 bg-blue hover:bg-blue/50 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
-                Learn More
-              </a>
+              <Button href="https://numaflow.numaproj.io/" text={"Learn More"} target={"_blank"}/>
             </Fade>
           </div>
         </ParallaxLayer>
@@ -500,9 +497,7 @@ const IndexPage = () => {
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 9999 }}>
           <div className="flex space-x-2 md:mt-[1em] mt-[4em] justify-center">
             <Fade delay={500}>
-              <a href="https://numalogic.numaproj.io/" target={"_blank"} rel="noopener noreferrer" className="inline-block px-9 py-4 bg-blue hover:bg-blue/50 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
-                Learn More
-              </a>
+              <Button href="https://numaflow.numaproj.io/" text={"Learn More"} target={"_blank"}/>
             </Fade>
           </div>
         </ParallaxLayer>
