@@ -8,7 +8,7 @@ yarn-error.log
 .vscode/
 .cache/
 public
-.DS_Store
+.idea/
 
 .yarn/*
 npm-debug.log*
