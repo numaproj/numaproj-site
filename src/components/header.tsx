@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from '../assets/logo.svg'
 
 interface topMenuItemsProps {
@@ -32,16 +32,18 @@ const topMenuItems: topMenuItemsProps[] = [
 
 export const Header = () => {
 
+    const [menuOpened, setMenuOpened] = useState<boolean>(false)
+
     return (
         <header className="sticky -top-1 left-0 z-50 py-3 lg:px-8 px-2 w-full lg:py-5">
             <div className="flex items-center">
             <Logo />
-                <nav className="absolute z-998 -right-full top-0 w-4/6 h-screen pt-14 bg-white overflow-y-scroll transition-right duration-300 in-expo shadow-2xl lg:items-center lg:ml-auto lg:flex lg:space-x-8 lg:relative lg:right-auto lg:top-auto lg:w-auto lg:h-auto lg:pt-0 lg:bg-none lg:bg-transparent lg:overflow-y-visible lg:shadow-none">
+                <nav className={`${menuOpened ? "!right-[-1.2em] top-[-1.2em]" : ""} absolute z-998 -right-full lg:top-0 w-4/6 h-screen pt-14 bg-gray-dark bg-blend-darken overflow-y-scroll transition-right duration-300 in-expo shadow-2xl lg:items-center lg:ml-auto lg:flex lg:space-x-8 lg:relative lg:right-auto lg:top-auto lg:w-auto lg:h-auto lg:pt-0 lg:bg-none lg:bg-opacity-0 lg:overflow-y-visible lg:shadow-none`}>
                     <ul className="px-5 text-lg lg:flex lg:h-auto lg:space-x-6 lg:space-y-0 lg:text-lg">
                         {topMenuItems.map((item) => (
                             <li
                                 key={item.name}
-                                className="border-t border-light py-3 lg:py-0 lg:border-none"
+                                className="border-b border-gray-light border-opacity-30 py-3 lg:py-0 lg:border-none"
                             >
                                 <a
                                     className="font-medium text-dark lg:text-gray-light hover:text-primary"
@@ -118,8 +120,9 @@ export const Header = () => {
                     </div>
                 </nav>
                 <div
-                    className="burger burger-squeeze appearance-none relative z-999 ml-auto lg:hidden"
-                    aria-expanded="false"
+                    onClick={()=>{setMenuOpened(!menuOpened)}}
+                    className={`${menuOpened ? "open" : ""} burger burger-squeeze appearance-none relative ml-auto text-gray-light lg:hidden z-[999]`}
+                    aria-expanded={menuOpened}
                     aria-label="Close navigation"
                 >
                     <div className="burger-lines"></div>
