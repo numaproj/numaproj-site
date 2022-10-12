@@ -27,7 +27,7 @@ const IndexPage = () => {
         {/* Screen 1 */}
         <ParallaxLayer
           offset={0}
-          style={{ display: 'block', justifyContent: 'center', alignItems: 'center', zIndex: 900 }}>
+          style={{ display: 'block', justifyContent: 'center', alignItems: 'center', zIndex: 990 }}>
           <div>
             <div className="mx-auto p-5">
               <Fade>
