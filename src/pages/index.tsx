@@ -495,7 +495,7 @@ const IndexPage = () => {
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 9999, pointerEvents: 'none' }}>
           <div className="flex space-x-2 md:mt-[1em] mt-[4em] justify-center pointer-events-auto">
             <Fade delay={500}>
-              <Button href="https://numaflow.numaproj.io/" text={"Learn More"} target={"_blank"}/>
+              <Button href="https://numalogic.numaproj.io/" text={"Learn More"} target={"_blank"}/>
             </Fade>
           </div>
         </ParallaxLayer>
