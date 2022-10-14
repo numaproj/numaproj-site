@@ -540,9 +540,6 @@ const IndexPage = () => {
             </Fade>
             <Footer/>
           </div>
-
-
-
         </ParallaxLayer>
       </Parallax>
     </Layout>
