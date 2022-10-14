@@ -19,6 +19,7 @@ import IceB from "../images/iceberg.png"
 import Wave from "../images/wave.png"
 import Mountains from "../images/mountains.png"
 import Button from "../components/button"
+import Footer from "../components/footer"
 
 const IndexPage = () => {
 
@@ -533,9 +534,14 @@ const IndexPage = () => {
           offset={3}
           speed={1}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'end', pointerEvents: 'none' }}>
-          <Fade>
-            <img src={Mountains} className={" min-w-[960px]"} />
-          </Fade>
+          <div>
+            <Fade>
+              <img src={Mountains} className={" min-w-[960px]"} />
+            </Fade>
+            <Footer/>
+          </div>
+
+
 
         </ParallaxLayer>
       </Parallax>
