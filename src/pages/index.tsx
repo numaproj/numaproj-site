@@ -64,7 +64,7 @@ const IndexPage = () => {
           offset={0}
           speed={0.34}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'top', pointerEvents: 'none', opacity: '1', marginTop: "0em" }}>
-          <div style={{ maxWidth: '15%', width: '15%', textAlign: 'center' }}>
+          <div style={{ maxWidth: '100%', width: '100%', textAlign: 'center' }}>
             <Fade>
               <img src={Panda1} alt="Panda" className="mx-auto mt-[12.5em]"/>
             </Fade>
