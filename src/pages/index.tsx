@@ -7,7 +7,8 @@ import { Header } from "../components/header"
 import { IntuitLogo } from "../components/intuitlogo"
 import Numaflow from "../images/numaflow.png"
 import Numalogic from "../images/numalogic.png"
-import Panda1 from "../assets/panda1.svg"
+import NumaProj from "../images/numaproj.png"
+import Panda1 from "../images/logo.png"
 import Panda2 from "../assets/panda2.svg"
 import Ellipse1 from "../images/ellipse1.png"
 import Glow from "../images/glow.png"
@@ -49,12 +50,24 @@ const IndexPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
+            offset={0}
+            speed={0.3}
+            style={{ display: 'flex', justifyContent: 'center', alignItems: 'top', pointerEvents: 'none', opacity: '1', marginTop: "0em" }}>
+          <div style={{ maxWidth: '100%', width: '100%', textAlign: 'center' }}>
+            <Fade>
+              <img src={NumaProj} alt="Panda" className="mx-auto mt-[7.5em]"/>
+            </Fade>
+          </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer
           offset={0}
           speed={0.34}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'top', pointerEvents: 'none', opacity: '1', marginTop: "0em" }}>
           <div style={{ maxWidth: '100%', width: '100%', textAlign: 'center' }}>
             <Fade>
-              <Panda1 className="mx-auto mt-[12.5em]" />
+              {/*<Panda1 className="mx-auto mt-[12.5em]" />*/}
+              <img src={Panda1} alt="Panda" className="mx-auto mt-[12.5em]"/>
             </Fade>
           </div>
         </ParallaxLayer>
