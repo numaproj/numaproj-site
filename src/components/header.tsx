@@ -10,13 +10,13 @@ interface topMenuItemsProps {
 
 const topMenuItems: topMenuItemsProps[] = [
     {
-        name: "Numaflow",
+        name: "numaflow",
         href: "https://numaflow.numaproj.io/",
         target: "_blank",
         rel: "noopener noreferrer",
     },
     {
-        name: "Numalogic",
+        name: "numalogic",
         href: "https://numalogic.numaproj.io/",
         target: "_blank",
         rel: "noopener noreferrer",
