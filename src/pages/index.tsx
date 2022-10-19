@@ -239,7 +239,7 @@ const IndexPage = () => {
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', pointerEvents: 'none' }}>
           <Fade>
             <div className="text-center">
-              <img src={Numaflow} className="md:w-[691px] w-[441px] max-w-[85%] md:max-w-[100%] md:mb-[20%] mb-[80%] mx-auto relative md:left-[-2em]" />
+              <img src={Numaflow} className="md:w-[691px] w-[441px] max-w-[85%] md:max-w-[100%] md:mb-[28%] mb-[80%] mx-auto relative md:left-[0em]" />
             </div>
           </Fade>
         </ParallaxLayer>
@@ -426,7 +426,7 @@ const IndexPage = () => {
           <div className="relative md:top-[-24%] top-[-27%]">
             <Fade delay={800}>
               <AttentionSeeker delay={700} effect="headShake">
-                <img src={Code} className="ml-[0em]" />
+                <img src={Code} className="ml-[0em] max-w-[822px] relative top-[-2em]" />
               </AttentionSeeker>
             </Fade>
           </div>
@@ -436,7 +436,7 @@ const IndexPage = () => {
           offset={2}
           speed={0.45}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', pointerEvents: 'none' }}>
-          <div className="relative top-[-30%]">
+          <div className="relative top-[-35%] left-[-2.5em]">
             <Fade delay={1300}>
               <img src={Wavyline} className=" min-w-[960px] md:scale-100 scale-75" />
             </Fade>
@@ -447,9 +447,9 @@ const IndexPage = () => {
           offset={2}
           speed={0.2}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', pointerEvents: 'none' }}>
-          <div className="relative top-[-50%] md:top-[0%] md:mb-[30em] ">
+          <div className="relative top-[-50%] md:top-[0%] md:mb-[35em] ">
             <Fade delay={300}>
-              <img src={Numalogic} className="md:w-[707px] w-[441px] max-w-[85%] md:max-w-[100%] mx-auto left-[0em] md:left-[-1.5em] relative" />
+              <img src={Numalogic} className="md:w-[707px] w-[441px] max-w-[85%] md:max-w-[100%] mx-auto left-[0em] md:left-[0em] relative" />
 
             </Fade>
           </div>
@@ -478,7 +478,7 @@ const IndexPage = () => {
           speed={0.27}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', pointerEvents: 'none' }}>
           <div>
-            <h2 className="text-[20px] font-normal mt-7 text-center">
+            <h2 className="text-[20px] font-normal mt-0 text-center">
               <div className="max-w-[600px] relative z-[2000]">
                 <Fade delay={0}>
                   Tools for continuous real-time AI analytics including anomaly&nbsp;detection&nbsp;at&nbsp;scale
@@ -549,7 +549,9 @@ const IndexPage = () => {
             <Fade>
               <img src={Mountains} className={" min-w-[960px]"} />
             </Fade>
-            <Footer/>
+            <Fade>
+              <Footer/>
+            </Fade>
           </div>
         </ParallaxLayer>
       </Parallax>
