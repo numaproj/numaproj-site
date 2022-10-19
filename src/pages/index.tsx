@@ -55,7 +55,7 @@ const IndexPage = () => {
             style={{ display: 'flex', justifyContent: 'center', alignItems: 'top', pointerEvents: 'none', opacity: '1', marginTop: "0em" }}>
           <div style={{ maxWidth: '100%', width: '100%', textAlign: 'center' }}>
             <Fade>
-              <img src={NumaProj} alt="Numaproj" className="mx-auto mt-[7.5em] max-w-[460px]"/>
+              <img src={NumaProj} alt="Numaproj" className="mx-auto mt-[7.5em] max-w-[70%] md:max-w-[460px]"/>
             </Fade>
           </div>
         </ParallaxLayer>
@@ -77,7 +77,7 @@ const IndexPage = () => {
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'start', pointerEvents: 'none' }}>
           <div className="mt-[29em]">
             <Fade>
-              <h1 style={{ lineHeight: "1.1em" }} className="lg:text-[38px] max-w-[800px] md:text-[32px] text-[26px] font-bold text-white text-center mt-[-10px]">Real-time data processing&nbsp;and&nbsp;AI analytics&nbsp;on&nbsp;Kubernetes</h1>
+              <h1 style={{ lineHeight: "1.15em" }} className="lg:text-[38px] max-w-[800px] md:text-[32px] text-[26px] font-bold text-white text-center mt-[-10px]">Real-time data processing&nbsp;and&nbsp;AI analytics&nbsp;on&nbsp;Kubernetes</h1>
             </Fade>
           </div>
         </ParallaxLayer>
@@ -101,7 +101,6 @@ const IndexPage = () => {
           speed={0.25}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: -1, pointerEvents: 'none' }}>
           <div>
-            {/* <Wave className="opacity-60 mb-[10em]"/> */}
             <Fade delay={500}>
               <img src={Wave} className="mx-auto mb-[10em]" style={{ width: '975px', maxWidth: '140%', transform: 'translate(-50%, 0)', marginLeft: '49.7%' }} />
             </Fade>
