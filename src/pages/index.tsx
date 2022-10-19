@@ -560,4 +560,6 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Home Page</title>;
+export const Head: HeadFC = () => <>
+  <title>Numaproj - Real-time data processing and AI analytics on Kubernetes</title>
+</>;
