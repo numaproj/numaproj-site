@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Logo from '../assets/logo.svg'
+// import Logo from '../assets/logo.svg'
 
 interface topMenuItemsProps {
     name: string
@@ -37,7 +37,7 @@ export const Header = () => {
     return (
         <header className="sticky -top-1 left-0 z-50 py-3 lg:px-8 px-2 w-full lg:py-5">
             <div className="flex items-center">
-            <Logo />
+            {/*<Logo />*/}
                 <nav className={`${menuOpened ? "!right-[-1.3em] top-[-1.3em]" : ""} absolute z-999 -right-full lg:top-0 w-4/6 h-screen pt-14 bg-gray-dark bg-blend-darken overflow-y-scroll transition-right duration-300 in-expo shadow-2xl lg:items-center lg:ml-auto lg:flex lg:space-x-8 lg:relative lg:right-auto lg:top-auto lg:w-auto lg:h-auto lg:pt-0 lg:bg-none lg:bg-opacity-0 lg:overflow-y-visible lg:shadow-none`}>
                     <ul className="px-5 text-lg lg:flex lg:h-auto lg:space-x-6 lg:space-y-0 lg:text-lg">
                         {topMenuItems.map((item) => (
