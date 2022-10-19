@@ -55,18 +55,18 @@ const IndexPage = () => {
             style={{ display: 'flex', justifyContent: 'center', alignItems: 'top', pointerEvents: 'none', opacity: '1', marginTop: "0em" }}>
           <div style={{ maxWidth: '100%', width: '100%', textAlign: 'center' }}>
             <Fade>
-              <img src={NumaProj} alt="Panda" className="mx-auto mt-[7.5em]"/>
+              <img src={NumaProj} alt="Numaproj" className="mx-auto mt-[7.5em] max-w-[460px]"/>
             </Fade>
           </div>
         </ParallaxLayer>
 
         <ParallaxLayer
           offset={0}
-          speed={0.34}
+          speed={0.35}
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'top', pointerEvents: 'none', opacity: '1', marginTop: "0em" }}>
           <div style={{ maxWidth: '100%', width: '100%', textAlign: 'center' }}>
             <Fade>
-              <img src={Panda1} alt="Panda" className="mx-auto mt-[12.5em]"/>
+              <img src={Panda1} alt="Panda" className="mx-auto mt-[12.5em] max-w-[224px] relative left-[3px]"/>
             </Fade>
           </div>
         </ParallaxLayer>
@@ -77,7 +77,7 @@ const IndexPage = () => {
           style={{ display: 'flex', justifyContent: 'center', alignItems: 'start', pointerEvents: 'none' }}>
           <div className="mt-[29em]">
             <Fade>
-              <h1 style={{ lineHeight: "1.2em" }} className="lg:text-[40px] max-w-[800px] md:text-[32px] text-[26px] font-bold text-white text-center mt-[-10px]">Real-time data processing&nbsp;and&nbsp;AI analytics&nbsp;on&nbsp;Kubernetes</h1>
+              <h1 style={{ lineHeight: "1.1em" }} className="lg:text-[38px] max-w-[800px] md:text-[32px] text-[26px] font-bold text-white text-center mt-[-10px]">Real-time data processing&nbsp;and&nbsp;AI analytics&nbsp;on&nbsp;Kubernetes</h1>
             </Fade>
           </div>
         </ParallaxLayer>
