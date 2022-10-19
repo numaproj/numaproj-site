@@ -22,7 +22,7 @@ const topMenuItems: topMenuItemsProps[] = [
         rel: "noopener noreferrer",
     },
     {
-        name: "Blog",
+        name: "blog",
         href: "https://blog.numaproj.io/",
         target: "_blank",
         rel: "noopener noreferrer",
